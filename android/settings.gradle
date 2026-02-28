@@ -2,5 +2,10 @@ pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
 plugins { id("com.facebook.react.settings") }
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 rootProject.name = 'citylinks'
+
+// This line is the key—it tells the cloud how to find Expo's tools
+apply from: new File(["node", "--print", "require.resolve('expo/package.json')"].execute(null, rootProject.projectDir).text.trim(), "../scripts/autolinking.gradle")
+useExpoModules()
+
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
