@@ -1,0 +1,11 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+def nodeModulesPath = new File(projectDir, "..")
+if (!new File(nodeModulesPath, "node_modules/expo-modules-autolinking").exists()) {
+    nodeModulesPath = new File(projectDir, "../../node_modules")
+}
+
+def autolinkingPath = new File(nodeModulesPath, "node_modules/expo-modules-autolinking/scripts/autolinking.gradle")
+if (autolinkingPath.exists()) {
+    apply from: autolinkingPath
+}

@@ -32,8 +32,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
 expoAutolinking.useExpoModules()
 
 rootProject.name = 'citylinks'
-
-expoAutolinking.useExpoVersionCatalog()
-
+apply from: new File(settingsDir, "../scripts/autolinking.gradle")
+useExpoModules()
 include ':app'
-includeBuild(expoAutolinking.reactNativeGradlePlugin)
+includeBuild('../node_modules/@react-native/gradle-plugin')
