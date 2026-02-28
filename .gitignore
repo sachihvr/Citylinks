@@ -1,0 +1,21 @@
+# Android/IntelliJ
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+!my-release-key.keystore
+.kotlin/
+
+# node.js
+node_modules/
+
+# Bundle artifact
+*.jsbundle
+
+# Temporary files created by Metro
+.metro-health-check*

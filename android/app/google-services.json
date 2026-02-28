@@ -1,0 +1,30 @@
+{
+    "project_info": {
+        "project_number": "374284591449",
+        "firebase_url": "https://fir-dddb2-default-rtdb.firebaseio.com",
+        "project_id": "fir-dddb2",
+        "storage_bucket": "fir-dddb2.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:374284591449:android:32022fde50c49936946c48",
+                "android_client_info": {
+                    "package_name": "com.citylinks"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyBzpdi55CwG-1FWu3fuqvbNeJY1qHSFFIg"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
