@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "290070653810",
-    "project_id": "citylinks-76333",
-    "storage_bucket": "citylinks-76333.firebasestorage.app"
+    "project_number": "712023357198",
+    "project_id": "citylinks-50790",
+    "storage_bucket": "citylinks-50790.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:290070653810:android:8364136711f44d4dc58beb",
+        "mobilesdk_app_id": "1:712023357198:android:5cd41ff5d18f7f725d495f",
         "android_client_info": {
-          "package_name": "com.citylinks.citylinks"
+          "package_name": "com.sachihvr.citylinks"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCs99GRhuL-xc7hHdog_8Q4KcLYq5uijks"
+          "current_key": "AIzaSyCOKc1q_OdqYM89pGHbo0GpLQ57YHQlnCs"
         }
       ],
       "services": {
