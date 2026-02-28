@@ -1,3 +1,4 @@
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   StyleSheet, Text, View, TextInput, TouchableOpacity, Image,
@@ -2342,17 +2343,20 @@ const AppNavigator = () => {
 };
 
 // ── Root ─────────────────────────────────────────────────────────────
+
 export default function App() {
   const [currentUser, setCurrentUser] = useState<FirebaseAuthTypes.User | null>(null);
   const [currentRole, setCurrentRole] = useState<UserRole>(null);
   const [tempProdPhoto, setTempProdPhoto] = useState<string | null>(null);
 
   return (
-    <AppContext.Provider value={{ currentUser, currentRole, setCurrentUser, setCurrentRole, tempProdPhoto, setTempProdPhoto }}>
-      <NavigationContainer>
-        <AppNavigator />
-      </NavigationContainer>
-    </AppContext.Provider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <AppContext.Provider value={{ currentUser, currentRole, setCurrentUser, setCurrentRole, tempProdPhoto, setTempProdPhoto }}>
+        <NavigationContainer>
+          <AppNavigator />
+        </NavigationContainer>
+      </AppContext.Provider>
+    </GestureHandlerRootView>
   );
 }
 
